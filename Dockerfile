@@ -1,5 +1,4 @@
-FROM node
-MAINTAINER jaga santagostino <kandros5591@gmail.com>
+FROM node:16
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -12,4 +11,5 @@ ENV NODE_ENV production
 
 EXPOSE 8000
 CMD ["npm", "run", "bs"]
+CMD ["echo", "**Done**" ]
 
